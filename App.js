@@ -1,29 +1,25 @@
-// In App.js in a new project
+//import liraries
+import React, { Component } from 'react';
+import { View, Text, StyleSheet } from 'react-native';
 
-import * as React from 'react';
-import { View, Text, SafeAreaView ,safe} from 'react-native';
-import { NavigationContainer } from '@react-navigation/native';
-import { createNativeStackNavigator } from '@react-navigation/native-stack';
-
-
-function HomeScreen() {
+// create a component
+const App = () => {
   return (
-    <safe style={{ flex: 1, alignItems: 'center', justifyContent: 'center' }}>
-      <Text>Home Screen</Text>
-    </safe>
+    <View style={styles.container}>
+      <Text>THIS IS SANJNA'S TEXT.</Text>
+    </View>
   );
-}
+};
 
-const Stack = createNativeStackNavigator();
+// define your styles
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+    backgroundColor: '#2c3e50',
+  },
+});
 
-function App() {
-  return (
-    <NavigationContainer>
-      <Stack.Navigator>
-        {/* <Stack.Screen name="Home" component={HomeScreen} /> */}
-      </Stack.Navigator>
-    </NavigationContainer>
-  );
-}
-
+//make this component available to the app
 export default App;
