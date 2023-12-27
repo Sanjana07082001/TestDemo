@@ -6,7 +6,7 @@ import { View, Text, StyleSheet } from 'react-native';
 const App = () => {
   return (
     <View style={styles.container}>
-      <Text>THIS IS SANJNA'S TEXT.</Text>
+      <Text>THIS IS SANJNA'S TEXT. checkkkkk</Text>
     </View>
   );
 };
